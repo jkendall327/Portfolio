@@ -29,28 +29,22 @@ main {
     font-weight: bold;
 
     font-size: large;
+}
 
+.heading, .date{
     text-align: right;
 }
 
-.entry {
-    grid-column: item-start/item-end;
-
+.entry, .title, .date{
     margin: 0;
 }
 
-.title {
+.entry, .title {
     grid-column: item-start/item-end;
-    
-    margin: 0;
 }
 
 .date {
     grid-column: date-start/date-end;
-
-    margin: 0;
-
-    text-align: right;
 }
 
  /* Individual item positioning */
