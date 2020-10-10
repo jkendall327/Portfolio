@@ -6,7 +6,7 @@ body {
 main {
     display: grid;
     grid-template-columns: 20px [heading-start] auto [heading-end item-start] auto [item-end date-start] auto [date-end] 20px;
-    grid-template-rows: auto auto auto auto auto auto auto;
+    grid-template-rows: auto auto [experience-one-start] auto [experience-one-end] auto auto auto auto;
     gap: 1em;
 
     margin-left: 5%;
@@ -47,7 +47,7 @@ main {
     grid-column: date-start/date-end;
 }
 
- /* Individual item positioning */
+ /* --------Individual item positioning-------- */
 
 .summary .summary-entry{
     grid-row: 1/2;
@@ -57,11 +57,17 @@ main {
     grid-row: 2/3;
 }
 
-.experience .indie {
+/* Experience */
+
+.experience {
+    grid-row: [experience-one-start] / [experience-one-end];
+}
+
+.strategic {
     grid-row: 3/4;
 }
 
-.entry-indie{
+.strategic.entry {
     grid-row: 4/5;
 }
 
@@ -73,11 +79,13 @@ main {
     grid-row: 6/7;
 }
 
-.strategic {
+.indie.date, .indie.title {
     grid-row: 7/8;
 }
 
-.strategic.entry {
+.indie.entry {
     grid-row: 8/9;
 }
+
+
 
