@@ -21,22 +21,28 @@ main {
     text-align: right;
   }
 
-.summary {
+ /* Grid content */ 
+
+.heading {
     grid-column: 2/3;
+}
+
+.entry {
+    grid-column: 3/4;
+}
+
+.summary {
     grid-row: 1/2;
 }
 
 .summary-entry {
-    grid-column: 3/4;
     grid-row: 1/2;
 }
 
 .skills {
-    grid-column: 2/3;
     grid-row: 2/3;
 }
 
 .entry-skills {
-    grid-column: 3/4;
     grid-row: 2/3;
 }
