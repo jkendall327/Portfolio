@@ -1,8 +1,25 @@
+body {
+    font-family: 'Crimson Text', serif;
+    margin: 3%;
+  }
+
 main {
     display: grid;
     grid-template-columns: 20px auto auto auto 20px;
     grid-template-rows: auto auto auto auto;
+    gap: 1em;
+
+    margin-left: 5%;
+    margin-right: 5%;
 }
+  
+  header h1 {
+    font-size: 3em;
+  }
+  
+  .links {
+    text-align: right;
+  }
 
 .summary {
     grid-column: 2/3;
