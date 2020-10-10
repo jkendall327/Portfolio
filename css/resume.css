@@ -25,24 +25,20 @@ main {
 
 .heading {
     grid-column: 2/3;
+
+    font-weight: bold;
 }
 
 .entry {
     grid-column: 3/4;
 }
 
-.summary {
+ /* Individual item positioning */
+
+.summary .summary-entry{
     grid-row: 1/2;
 }
 
-.summary-entry {
-    grid-row: 1/2;
-}
-
-.skills {
-    grid-row: 2/3;
-}
-
-.entry-skills {
+.skills .entry-skills{
     grid-row: 2/3;
 }
