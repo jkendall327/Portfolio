@@ -6,7 +6,7 @@ body {
 main {
     display: grid;
     grid-template-columns: 20px auto auto auto 20px;
-    grid-template-rows: auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto auto;
     gap: 1em;
 
     margin-left: 5%;
@@ -31,6 +31,20 @@ main {
 
 .entry {
     grid-column: 3/4;
+
+    margin: 0;
+}
+
+.title {
+    grid-column: 3/4;
+    
+    margin: 0;
+}
+
+.date {
+    grid-column: 4/5;
+
+    margin: 0;
 }
 
  /* Individual item positioning */
@@ -41,4 +55,12 @@ main {
 
 .skills .entry-skills{
     grid-row: 2/3;
+}
+
+.experience .title-indie {
+    grid-row: 3/4;
+}
+
+.entry-indie{
+    grid-row: 4/5;
 }
