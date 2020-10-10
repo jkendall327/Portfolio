@@ -10,7 +10,6 @@ body {
     margin-right: 3%;
 
     background-image: url("greek-vase.png");
-    background-color: beige;
 }
 
 main {
@@ -34,6 +33,10 @@ header h1 {
 }
 
 p {
+    text-align: justify;
+}
+
+p .entry {
     margin-bottom: 0%;
 }
 
