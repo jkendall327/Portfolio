@@ -15,6 +15,7 @@ main {
 
 header h1 {
     font-size: 3em;
+    margin-bottom: 0;
 }
 
 .links {
@@ -134,5 +135,20 @@ header h1 {
 }
 
 .garage.entry {
+    grid-row: calc(var(--rowstart) + 1)/calc(var(--rowstart) + 2);
+}
+
+.education {
+    grid-row: 15/16;
+}
+
+.university {
+    --rowstart: 15;
+    --rowend: 16;
+
+    grid-row: var(--rowstart)/var(--rowend);
+}
+
+.university.entry {
     grid-row: calc(var(--rowstart) + 1)/calc(var(--rowstart) + 2);
 }
