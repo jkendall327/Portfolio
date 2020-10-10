@@ -110,3 +110,29 @@ header h1 {
 .glass.entry {
     grid-row: calc(var(--rowstart) + 1)/calc(var(--rowstart) + 2);
 }
+
+.lodge {
+    --rowstart: 11;
+    --rowend: 12;
+
+    grid-row: var(--rowstart)/var(--rowend);
+}
+
+.lodge.entry {
+    grid-row: calc(var(--rowstart) + 1)/calc(var(--rowstart) + 2);
+}
+
+.qualifications {
+    grid-row: 13/14;
+}
+
+.garage {
+    --rowstart: 13;
+    --rowend: 14;
+
+    grid-row: var(--rowstart)/var(--rowend);
+}
+
+.garage.entry {
+    grid-row: calc(var(--rowstart) + 1)/calc(var(--rowstart) + 2);
+}
