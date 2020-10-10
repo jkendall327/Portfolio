@@ -5,7 +5,7 @@ body {
 
 main {
     display: grid;
-    grid-template-columns: 20px auto auto auto 20px;
+    grid-template-columns: 20px [heading-start] auto [heading-end item-start] auto [item-end date-start] auto [date-end] 20px;
     grid-template-rows: auto auto auto auto auto auto auto;
     gap: 1em;
 
@@ -24,27 +24,29 @@ main {
  /* Grid content */ 
 
 .heading {
-    grid-column: 2/3;
+    grid-column: heading-start/heading-end;
 
     font-weight: bold;
+
+    font-size: large;
 
     text-align: right;
 }
 
 .entry {
-    grid-column: 3/4;
+    grid-column: item-start/item-end;
 
     margin: 0;
 }
 
 .title {
-    grid-column: 3/4;
+    grid-column: item-start/item-end;
     
     margin: 0;
 }
 
 .date {
-    grid-column: 4/5;
+    grid-column: date-start/date-end;
 
     margin: 0;
 
