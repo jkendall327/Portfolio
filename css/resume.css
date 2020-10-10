@@ -27,6 +27,8 @@ main {
     grid-column: 2/3;
 
     font-weight: bold;
+
+    text-align: right;
 }
 
 .entry {
@@ -45,6 +47,8 @@ main {
     grid-column: 4/5;
 
     margin: 0;
+
+    text-align: right;
 }
 
  /* Individual item positioning */
@@ -57,10 +61,18 @@ main {
     grid-row: 2/3;
 }
 
-.experience .title-indie {
+.experience .indie {
     grid-row: 3/4;
 }
 
 .entry-indie{
     grid-row: 4/5;
+}
+
+.glass {
+    grid-row: 5/6;
+}
+
+.entry-glass{
+    grid-row: 6/7;
 }
