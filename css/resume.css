@@ -4,7 +4,10 @@ html {
 
 body {
     font-family: 'Crimson Text', serif;
-    margin: 3%;
+    margin-top: 0%;
+    margin-bottom: 3%;
+    margin-left: 3%;
+    margin-right: 3%;
 }
 
 main {
@@ -17,13 +20,26 @@ main {
     margin-right: 5%;
 }
 
+header {
+    margin-bottom: 1em;
+}
+
 header h1 {
     font-size: 3em;
     margin-bottom: 0;
+    margin-top: 1%;
+}
+
+p {
+    margin-bottom: 0%;
 }
 
 .links {
     text-align: right;
+}
+
+.inline {
+    display: inline;
 }
 
 /* Grid content */
@@ -33,7 +49,7 @@ header h1 {
 
     font-weight: bold;
 
-    font-size: large;
+    font-size: 1em;
 }
 
 .heading,
@@ -58,11 +74,11 @@ header h1 {
 
 /* --------Individual item positioning-------- */
 
-.summary .summary-entry {
+.summary {
     grid-row: 1/2;
 }
 
-.skills .entry-skills {
+.skills {
     grid-row: 2/3;
 }
 
